@@ -1,2 +1,2 @@
 # TestGen
-# master branch
+# appium  : qxf2-page-object-model-master

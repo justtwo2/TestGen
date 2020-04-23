@@ -1,0 +1,67 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python test",
+            "type": "python",
+            "request": "launch",
+            "pythonPath":  "${config:python.pythonPath}",
+            "module": "pytest",
+            "args": [
+                "--no-cov"
+            ],
+            "program": "${workspaceRoot}\\tests\\test_acclerate_PCBrowser.py"
+        },
+        {
+            "name": "PyTest2",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "module": "pytest",
+            "args": [
+                "-sv",
+                "--disable-pytest-warnings",
+                "--html=report.html"
+            ],
+            "cwd": "${workspaceRoot}\\tests\\test_android_acclerate.py",
+            "env": {},
+            "envFile": "${workspaceRoot}/.env"
+            /*"debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]*/
+        },
+        {
+            "name": "PyTest",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "pythonPath": "${config:python.pythonPath}",
+            "module": "pytest",
+            "args": [
+                "${workspaceRoot}\\tests\\test_acclerate_PCBrowser.py"
+            ],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "envFile": "${workspaceRoot}/.env"
+            /*"debugOptions": [
+                "WaitOnAbnormalExit",
+                "WaitOnNormalExit",
+                "RedirectOutput"
+            ]*/
+        }
+
+    ]
+}
