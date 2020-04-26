@@ -1,14 +1,14 @@
 #Details needed for the Gmail
 #Fill out the email details over here
 imaphost="imap.exmail.qq.com"  #Add imap hostname of your email client
-username="lizhihong@buckyos.com"
+username="填写自己的邮箱号码"
 
 #Login has to use the app password because of Gmail security configuration
 # 1. Setup 2 factor authentication
 # 2. Follow the 2 factor authentication setup wizard to enable an app password
 #Src: https://support.google.com/accounts/answer/185839?hl=en
 #Src: https://support.google.com/mail/answer/185833?hl=en
-app_password="Aa13067266279"
+app_password="邮箱密码"
 
 #Details for sending pytest report
 smtp_ssl_host = 'smtp.exmail.qq.com'  # Add smtp ssl host of your email client
